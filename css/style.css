@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #19011D;
+}
+
+.btn {
+  position: relative;
+  padding: 15px 30px;
+  margin: 10px;
+  background-color: #27022D;
+  color: #FFF;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 1px solid #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#FFF), to(transparent));
+  background: linear-gradient(90deg, transparent, #FFF, transparent);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn.btn-primary:hover {
+  background-color: #727CF5;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #6C757D;
+}
+
+.btn.btn-success:hover {
+  background-color: #0ACF97;
+}
+
+.btn.btn-danger:hover {
+  background-color: #FA5C7C;
+}
+
+.btn.btn-warning:hover {
+  background-color: #FFBC00;
+}
+
+.btn.btn-info:hover {
+  background-color: #39AFD1;
+}
+/*# sourceMappingURL=style.css.map */
